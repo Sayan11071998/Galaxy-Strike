@@ -70,7 +70,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4627372193573789655, guid: 041e70a38a24c0c4d824d8953505d05a, type: 3}
       propertyPath: m_Name
-      value: Enemy 2
+      value: Wasp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297118685666625510, guid: 041e70a38a24c0c4d824d8953505d05a, type: 3}
+      propertyPath: hitPoints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297118685666625510, guid: 041e70a38a24c0c4d824d8953505d05a, type: 3}
+      propertyPath: scoreValue
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
