@@ -1516,7 +1516,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
   EmissionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2
@@ -5418,6 +5418,7 @@ GameObject:
   - component: {fileID: 602805068}
   - component: {fileID: 602805070}
   - component: {fileID: 602805069}
+  - component: {fileID: 602805071}
   m_Layer: 0
   m_Name: Player Ship
   m_TagString: Untagged
@@ -5490,6 +5491,19 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &602805071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602805067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08381385392b1b4ea5b1ecb87545d39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laser: {fileID: 557943812}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
