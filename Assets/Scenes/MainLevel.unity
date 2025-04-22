@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: a07fadb24ea940240afba3afc1a692cc, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: b8f20d5ca50d16143afc11f5e4af6fc1, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -3635,10 +3635,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 9d6c020bd5ceef94fa4c8430073fdab1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7352c9308d59dee4aa038d8927433223, type: 3}
+  m_Resource: {fileID: 8300000, guid: 7352c9308d59dee4aa038d8927433223, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.11
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5232,6 +5232,8 @@ PlayableDirector:
     value: {fileID: 801677510}
   - key: {fileID: 7700775287757388717, guid: 2660c002d73f1524e8f05dc5f3e5cff8, type: 2}
     value: {fileID: 8421112342503484604}
+  - key: {fileID: -1248769931889675282, guid: 2660c002d73f1524e8f05dc5f3e5cff8, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - 0070ec390c9e1374d9fe483be93b050f: {fileID: 1582795646}
