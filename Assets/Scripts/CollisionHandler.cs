@@ -2,11 +2,19 @@ using UnityEngine;
 
 public class CollisionHandler : MonoBehaviour
 {
-    [SerializeField] private GameObject destroyedVFX;
+    [SerializeField] GameObject destroyedVFX;
 
-    private void OnTriggerEnter(Collider other)
+    GameSceneManager gameSceneManager;
+
+    private void Start() 
     {
+        gameSceneManager = FindFirstObjectByType<GameSceneManager>();    
+    }
+
+    private void OnTriggerEnter(Collider other) 
+    {
+        gameSceneManager.ReloadLevel();
         Instantiate(destroyedVFX, transform.position, Quaternion.identity);
-        Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 }
