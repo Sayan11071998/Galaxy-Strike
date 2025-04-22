@@ -3,28 +3,28 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float controlSpeed = 10f;
-    [SerializeField] float xClampRange = 5f;
-    [SerializeField] float yClampRange = 5f;
+    [SerializeField] private float controlSpeed = 10f;
+    [SerializeField] private float xClampRange = 5f;
+    [SerializeField] private float yClampRange = 5f;
 
-    [SerializeField] float controlPitchFactor = 18f;
-    [SerializeField] float controlRollFactor = 20f;
-    [SerializeField] float rotationSpeed = 10f;
+    [SerializeField] private float controlPitchFactor = 18f;
+    [SerializeField] private float controlRollFactor = 20f;
+    [SerializeField] private float rotationSpeed = 10f;
 
-    Vector2 movement;
+    private Vector2 movement;
 
-    void Update()
+    private void Update()
     {
         ProcessTranslation();
         ProcessRotation();
     }
 
-    public void OnMove(InputValue value) 
+    public void OnMove(InputValue value)
     {
         movement = value.Get<Vector2>();
     }
 
-    void ProcessTranslation()
+    private void ProcessTranslation()
     {
         float xOffset = movement.x * controlSpeed * Time.deltaTime;
         float rawXPos = transform.localPosition.x + xOffset;
@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, 0f);
     }
 
-    void ProcessRotation() 
+    private void ProcessRotation()
     {
         float pitch = -controlPitchFactor * movement.y;
         float roll = -controlRollFactor * movement.x;

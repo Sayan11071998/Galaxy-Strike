@@ -9,7 +9,7 @@ public class GameSceneManager : MonoBehaviour
         StartCoroutine(ReloadLevelRoutine());
     }
 
-    IEnumerator ReloadLevelRoutine() 
+    IEnumerator ReloadLevelRoutine()
     {
         yield return new WaitForSeconds(1f);
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;

@@ -1,22 +1,21 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerWeapon : MonoBehaviour
 {
-    [SerializeField] GameObject[] lasers;
-    [SerializeField] RectTransform crosshair;
-    [SerializeField] Transform targetPoint;
-    [SerializeField] float targetDistance = 100f;
+    [SerializeField] private GameObject[] lasers;
+    [SerializeField] private RectTransform crosshair;
+    [SerializeField] private Transform targetPoint;
+    [SerializeField] private float targetDistance = 100f;
 
-    bool isFiring = false;
+    private bool isFiring = false;
 
-    void Start() 
+    private void Start()
     {
         Cursor.visible = false;
     }
 
-    private void Update() 
+    private void Update()
     {
         ProcessFiring();
         MoveCrosshair();
@@ -24,12 +23,12 @@ public class PlayerWeapon : MonoBehaviour
         AimLasers();
     }
 
-    public void OnFire(InputValue value) 
+    public void OnFire(InputValue value)
     {
         isFiring = value.isPressed;
     }
 
-    void ProcessFiring() 
+    private void ProcessFiring()
     {
         foreach (GameObject laser in lasers)
         {
@@ -38,18 +37,18 @@ public class PlayerWeapon : MonoBehaviour
         }
     }
 
-    void MoveCrosshair() 
+    private void MoveCrosshair()
     {
         crosshair.position = Input.mousePosition;
     }
 
-    void MoveTargetPoint() 
+    private void MoveTargetPoint()
     {
         Vector3 targetPointPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, targetDistance);
         targetPoint.position = Camera.main.ScreenToWorldPoint(targetPointPosition);
     }
 
-    void AimLasers() 
+    private void AimLasers()
     {
         foreach (GameObject laser in lasers)
         {

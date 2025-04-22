@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] GameObject destroyedVFX;
-    [SerializeField] int hitPoints = 3;
-    [SerializeField] int scoreValue = 10;
+    [SerializeField] private GameObject destroyedVFX;
+    [SerializeField] private int hitPoints = 3;
+    [SerializeField] private int scoreValue = 10;
 
-    Scoreboard scoreboard;
+    private Scoreboard scoreboard;
 
-    private void Start() 
+    private void Start()
     {
         scoreboard = FindFirstObjectByType<Scoreboard>();
     }

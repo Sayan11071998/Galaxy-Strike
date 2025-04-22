@@ -2,17 +2,13 @@ using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
-    void Start()
+    private void Start()
     {
         int numOfMusicPlayers = FindObjectsByType<MusicPlayer>(FindObjectsSortMode.None).Length;
 
-        if (numOfMusicPlayers > 1) 
-        {
+        if (numOfMusicPlayers > 1)
             Destroy(gameObject);
-        }
-        else 
-        {
+        else
             DontDestroyOnLoad(gameObject);
-        }
     }
 }

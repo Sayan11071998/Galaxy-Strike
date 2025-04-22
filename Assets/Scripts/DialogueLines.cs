@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class DialogueLines : MonoBehaviour
 {
-    [SerializeField] string[] timelineTextLines;
-    [SerializeField] TMP_Text dialogueText;
+    [SerializeField] private string[] timelineTextLines;
+    [SerializeField] private TMP_Text dialogueText;
 
-    int currentLine = 0;
+    private int currentLine = 0;
 
-    public void NextDialogueLine() 
+    public void NextDialogueLine()
     {
         currentLine++;
         dialogueText.text = timelineTextLines[currentLine];
