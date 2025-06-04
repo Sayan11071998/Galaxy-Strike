@@ -1,4 +1,4 @@
-# 🚀 Project Spotlight: Galaxy Strike 🚀
+# 🚀 Galaxy Strike 🚀
 
 I'm excited to showcase **Galaxy Strike**, my Unity 3D space combat experience—a cinematic rail shooter that combines Timeline-driven storytelling with intense laser combat, featuring dynamic terrain navigation, precision aiming mechanics, and immersive space dogfighting across beautifully crafted galactic environments.
 
