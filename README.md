@@ -78,6 +78,7 @@ The combination of precise aiming mechanics, dynamic flight controls, and cinema
 ---
 
 ## Play Link
+https://sayannandi.itch.io/galaxy-strike
 
 [![Watch the video](https://img.youtube.com/vi/deB0LW2vT_Q/maxresdefault.jpg)](https://youtu.be/deB0LW2vT_Q)
 ### [Gameplay Video](https://youtu.be/deB0LW2vT_Q)
